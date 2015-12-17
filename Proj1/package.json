@@ -1,0 +1,12 @@
+{
+  "name": "nodejs_intro-project",
+  "version": "0.0.1",
+  "description": "Multiple nodejs examples helping to learn the framework. Read Readme.txt to get a better understanding what is what. ",
+  "main": "app4.js",
+  "scripts": {
+    "test": "na",
+    "start": "node app4.js"
+  },
+  "author": "irina",
+  "license": "ISC"
+}

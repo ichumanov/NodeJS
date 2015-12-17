@@ -1,0 +1,104 @@
+how to launch examples:
+/////////////////////////////////////////////////////////////////////////////////////	
+//Creates and starts the server without Express
+node app.js  --> Dependencies 
+			app.js
+
+/////////////////////////////////////////////////////////////////////////////////////	
+//Creates and starts the server with Express			
+node app1.js --> Dependencies
+	 		app1.js
+	
+
+/////////////////////////////////////////////////////////////////////////////////////				
+//Creates and starts the server with Express and uses a view: index2.ejs
+node app2.js --> Dependencies
+	 		app2.js
+			index2.ejs
+
+/////////////////////////////////////////////////////////////////////////////////////			
+//Creates and starts the server with Express and uses a view: index3.ejs. 
+//Defines configuration modules, middleware
+//installs bower middleware globally
+//	c02k91qefft3:NodeJS chumanovi$ npm i -g bower
+//	/usr/local/bin/bower -> /usr/local/lib/node_modules/bower/bin/bower
+//	bower@1.7.0 /usr/local/lib/node_modules/bower
+//installs bower bootstraps which is used for css, fonts, images
+	c02k91qefft3:NodeJS chumanovi$ bower i bootstrap
+	? May bower anonymously report usage statistics to improve the tool over time? Yes
+	bower bootstrap#*           not-cached git://github.com/twbs/bootstrap.git#*
+	bower bootstrap#*              resolve git://github.com/twbs/bootstrap.git#*
+	bower bootstrap#*             download 						https://github.com/twbs/bootstrap/archive/v3.3.6.tar.gz
+	bower bootstrap#*              extract archive.tar.gz
+	bower bootstrap#*             resolved git://github.com/twbs/bootstrap.git#3.3.6
+	bower jquery#1.9.1 - 2      not-cached git://github.com/jquery/jquery.git#1.9.1 - 2
+	bower jquery#1.9.1 - 2         resolve git://github.com/jquery/jquery.git#1.9.1 - 2
+	bower jquery#1.9.1 - 2        download 						https://github.com/jquery/jquery/archive/2.1.4.tar.gz
+	bower jquery#1.9.1 - 2         extract archive.tar.gz
+	bower jquery#1.9.1 - 2        resolved git://github.com/jquery/jquery.git#2.1.4
+	bower bootstrap#~3.3.6         install bootstrap#3.3.6
+	bower jquery#1.9.1 - 2         install jquery#2.1.4
+
+	bootstrap#3.3.6 bower_components/bootstrap
+	└── jquery#2.1.4
+
+//installs body-parser middleware in the node-modules directory
+node app3.js --> Dependencies
+	 		app3.js
+			index3.ejs
+
+					
+/////////////////////////////////////////////////////////////////////////////////////						
+//Getting closer to a layout of the real application. 
+//Separates definition of routes in its own file.
+
+
+/////////////////////////////////////////////////////////////////////////////////////	
+setting up GitHub and Heroku account
+1) Install additional heroku account (my personal) 
+  download a heroku plugin::
+   heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+  
+  
+user: gikchumak@bellsouth.net
+password: Karman2015
+
+> heroku status
+> heroku logout
+> heroku login
+
+
+Create personal Github account: 
+git config --global user.name "ichumanov"
+git config --global user.email "gikchumak@bellsouth.net"
+
+Creating an empty local repository for your personal projects (This will create .git directory)
+	507  find / -name git
+	  508     cd /usr/local/Library/ENV/scm/git
+	 
+	  512  git --version
+	  513   pwd
+	  514  cd ~/Desktop/Training/
+	  515  git init
+	  516  cd NodeJS/Proj1/
+	  517  cd ..
+	  518  add ./Proj1
+	  519  git add ./Proj1
+	  520  git commit -m "Initial commit"
+	  521  git add bower-components 
+	  522  git add NodeJS/bower-components 
+	  523  ls
+	  524  git add bower_components 
+	  525  git commit
+	  526  git log
+	
+	
+	
+	
+	
+	Created remote git repository on GitHub.
+	https://github.com/ichumanov/nodejs_training
+
+
+
+
